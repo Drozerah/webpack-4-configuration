@@ -5,7 +5,7 @@ import './main.scss'
 /**
  * MODULES
  */
-import { run } from './app'
+import { run } from './app/run.service'
 
-console.log("app started!");
+console.log("app started!")
 run()

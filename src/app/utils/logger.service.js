@@ -5,6 +5,6 @@
  * @returns console.log(string)
  * 
  */
-const log = string => console.log(`${string}`)
+const logger = string => console.log(`${string}`)
 
-export { log }
+export { logger }
