@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "rm -rf dist && webpack"
   },
   "repository": {
     "type": "git",
