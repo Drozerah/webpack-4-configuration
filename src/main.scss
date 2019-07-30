@@ -1,5 +1,31 @@
 @import 'sass/colors';
+@import 'sass/drozerah';
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
     background-color: $bg;
+    font-family: monospace;
+    color:#333;
 }
+
+.wrapper{
+    h1{
+        padding: 20px;
+        border: 2px solid $primary;
+        box-shadow: 5px 6px 0px $primary;
+        font-size: 2em;
+        color: inherit; 
+    }
+    div{
+        text-align: center;
+    }
+}
+
+

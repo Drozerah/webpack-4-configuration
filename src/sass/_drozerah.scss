@@ -1,0 +1,32 @@
+/* DROZERAH */
+
+.drozerah {
+    text-decoration: none;
+    color:#333;
+    font-size: 1em;
+}
+
+.drozerah svg {
+    width:20px;
+    height:20px;
+    display: inline-block;
+    vertical-align: -2px;
+}
+
+.drozerah path {
+    fill: #6a1b9a;
+    fill-rule: evenodd;
+}
+
+.drozerah span {
+    display: inline-block;
+    color: #6a1b9a;
+}
+
+.drozerah:hover path {
+    fill:purple;
+}
+
+.drozerah:hover span {
+    color: purple;
+}
