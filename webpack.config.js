@@ -1,10 +1,11 @@
-const path = require("path")
+// const path = require("path")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-    mode: "development", // Stop minify webpack JS bundle
-    devtool: "none", // Simplify outputted bundle code for reader when development
+    // mode: "development", // Stop minify webpack JS bundle
+    mode: "production", // Minify webpack JS bundle
+    // devtool: "none", // Simplify outputted bundle code for reader when development
     module: {
         rules: [
             {
@@ -51,13 +52,14 @@ module.exports = {
             }
         ]
     },
-    plugins: [new HtmlWebpackPlugin({ // Generate a file dist/index.html
-        template: "./src/index.html", // Use html source
-        filename: "./index.html" // Output html file into ./dist
-    }),
-    new MiniCssExtractPlugin({
-        filename: "[name].css",
-        chunkFilename: "[id].css"
-    })
+    plugins: [
+        new HtmlWebpackPlugin({ // Generate a file dist/index.html
+            template: "./src/index.html", // Use html source
+            filename: "./index.html" // Output html file into ./dist
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css"
+        })
     ]
 }
