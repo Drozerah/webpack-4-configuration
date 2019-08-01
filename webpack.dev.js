@@ -5,6 +5,16 @@ const autoprefixer = require('autoprefixer')
 
 module.exports = merge(common, {
 
+    watch: true, // watch for changes in any of the resolved files
+    devServer: {
+        open: true, // Tells dev-server to open the browser after server had been started
+        overlay: true, // Shows a full-screen overlay with errors or warnings
+        hot: false // update changes without full refresh in the browser
+    },
+    watchOptions: {
+        ignored: /node_modules/,
+        aggregateTimeout: 1200 // Add a delay before rebuilding once the first file changed
+    },
     mode: "development", // Stop minify webpack JS bundle
     devtool: "none", // Simplify outputted bundle code for reader when development
     plugins: [
