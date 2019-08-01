@@ -8,7 +8,13 @@ Structure:
 
 The _Webpack 4 configuration_ provides:
 
-- Dev Server in development
+- Dev Server with configuration options in development:
+    - see the `webpack.dev.js` file
+    - open the browser after server had been started
+    - configurable delay (1200ms) before rebuilding once the first file changed
+    - watch for changes in any of the webpack resolved files
+    - watch ignored directory with regex ex: node_modules
+    - full-screen overlay with errors or warnings
 - SCSS source maps in development
 
 <br>
@@ -17,7 +23,7 @@ The _Webpack 4 configuration_ provides:
 - export images in production
 - export SCSS into own CSS file in production
 - minified CSS in production
-- Babel.js ES6 to ES5 transpillation with configuration options in production :
+- Babel.js ES6 to ES5 transpillation with configuration options in production:
     - see the provided `.babelrc` file
 - minified JS in production
 - minified HTML in production
