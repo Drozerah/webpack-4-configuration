@@ -4,7 +4,7 @@
 
 Structure:
 
-![structure](https://raw.githubusercontent.com/Drozerah/MyGitHubStorage/master/img/webpack-4-configuration/tree-structure.png)
+![structure](https://raw.githubusercontent.com/Drozerah/MyGitHubStorage/master/img/webpack-4-configuration/tree-structure-2.png)
 
 The _Webpack 4 configuration_ provides:
 
@@ -16,6 +16,17 @@ The _Webpack 4 configuration_ provides:
     - watch ignored directory with regex ex: node_modules
     - full-screen overlay with errors or warnings
 - SCSS source maps in development
+- Linter in development:
+    - `ESLint`
+    - style guide: `JavaScript Standard`
+    - settings:
+        - check syntax
+        - find problems
+        - enforce code style
+    - see the `.eslintrc.js` config file
+    - [more about the configuration](https://github.com/Drozerah/ESLint-Standard-in-Webpack-4)
+    - ignoring files:
+        - see the `.eslintignore` file
 
 <br>
 
@@ -115,15 +126,16 @@ https://webpack-4-configuration.netlify.com/
 
 #### Built with:
 
-- [Webpack 4](https://webpack.js.org/)
 - Node.js
 - NPM
+- JavaScript ES6
+- [Webpack 4](https://webpack.js.org/)
+- ESLint
 - HTML5
 - CSS3
     - Grid Layout
 - SCSS
 - VScode
-- JavaScript ES6
 
 #### Author:
 
