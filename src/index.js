@@ -7,5 +7,5 @@ import './main.scss'
  */
 import { run } from './app/run.service'
 
-console.log("app started!")
+console.log('app started!')
 run()
