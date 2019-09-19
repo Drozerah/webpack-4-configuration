@@ -26,6 +26,14 @@ module.exports = merge(common, {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                loader: 'eslint-loader',
+                options: {
+                  // eslint options (if necessary)
+                },
+            },
+            {
                 test: /\.scss$/,
                 use: [
                     {
