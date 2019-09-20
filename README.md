@@ -114,6 +114,41 @@ $ cd dist && start index.html
 ````
 More about the [`start` command line](https://dwheeler.com/essays/open-files-urls.html)
 
+> __Working with a 3rd party library__
+
+If you need to import a 3rd party library it's easy. What you have to do is to add a `vendor.js` file (whatever the name) into the `./src` folder:
+
+````bash
+$ touch src/vendor.js
+````
+
+Then you have to declare this file into the `webpack.common.js` file as an additional entry point like so:
+
+`webpack.common.js`
+````diff
+module.exports = {
+  entry: {
+    main: './src/index.js',
++   vendor: './src/vendor.js' // 3rd party library import
+  },
+  //...
+}
+````
+Now you can import your library:
+`vendor.js`
+````javascript
+/**
+* Import your 3rd party library thereafter like so:
+* import "materialize-css" or import "bootstrap"...
+*/
+import "myLibrary"
+````
+Make sure your library is npm installed before you try to import it!
+
+Run your application and Webpack will now output 2 bundles.
+
+More about Webpack [Entry Points](https://webpack.js.org/concepts/entry-points/)
+
 <br>
 
 > __Deployment__ 
