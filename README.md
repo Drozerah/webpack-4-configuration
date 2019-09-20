@@ -135,6 +135,7 @@ module.exports = {
 }
 ````
 Now you can import your library:
+
 `vendor.js`
 ````javascript
 /**
