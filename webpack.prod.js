@@ -48,7 +48,7 @@ module.exports = merge(common, {
 
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/, // allow scss and css
         use: [
           {
             loader: MiniCssExtractPlugin.loader // 4. Extract CSS into separate files

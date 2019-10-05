@@ -34,7 +34,7 @@ module.exports = merge(common, {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/, // allow scss and css
         use: [
           {
             loader: 'style-loader', // 4. Inject CSS into the DOM
