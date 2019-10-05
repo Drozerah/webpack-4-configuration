@@ -18,7 +18,7 @@ The _Webpack 4 configuration_ provides:
 - SCSS source maps in development
 - Linter in development:
     - `ESLint`
-    - style guide: `JavaScript Standard`
+    - [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
     - settings:
         - check syntax
         - find problems
