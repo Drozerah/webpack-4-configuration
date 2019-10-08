@@ -41,7 +41,9 @@ The _Webpack 4 configuration_ provides:
 - CSS autoprefixer in production
     - __Note:__ CSS3 Grid Layout polyfill (IE 10-11) is available
 
+<br>
 
+- export favicon both in development and production
 ## Usage:
 
 Clone or download this repository

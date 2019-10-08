@@ -22,6 +22,18 @@ module.exports = {
         ]
       },
       {
+        test: /favicon\.png$/, // Extract './favicon.png'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: '' // Output path into the ./dist root directory
+            }
+          }
+        ]
+      },
+      {
         test: /\.(svg|png|jpe?g|gif)$/,
         use: [
           {
