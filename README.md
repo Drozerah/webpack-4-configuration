@@ -44,6 +44,11 @@ The _Webpack 4 configuration_ provides:
 <br>
 
 - export favicon both in development and production
+- export SEO files both in development and production:
+    - robots.txt
+    - humans.txt
+        - [more about the humans.txt file](http://humanstxt.org/)
+
 ## Usage:
 
 Clone or download this repository

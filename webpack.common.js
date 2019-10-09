@@ -34,6 +34,18 @@ module.exports = {
         ]
       },
       {
+        test: /(robots|humans)\.txt$/, // Extract './robots.txt' or './humans.txt'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: '' // Output path into the ./dist root directory
+            }
+          }
+        ]
+      },
+      {
         test: /\.(svg|png|jpe?g|gif)$/,
         use: [
           {

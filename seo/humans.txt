@@ -1,0 +1,23 @@
+/* TEAM */
+
+Developer: Thomas G. aka Drozerah
+                            
+GitHub: https://github.com/Drozerah
+Dev: https://dev.to/drozerah
+                         
+Location: France
+
+                            
+/* SITE */
+
+                            
+Last update: YYYY/MM/DD 
+
+                            
+Standards: HTML5, CSS3,..
+
+                            
+Components: Modernizr, jQuery, etc.
+
+                            
+Software: Software used for the development
