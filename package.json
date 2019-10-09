@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
+    "build:netlify": "webpack --config webpack.prod.js && cp ./netlify/_redirects ./dist/_redirects",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {

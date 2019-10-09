@@ -40,13 +40,17 @@ The _Webpack 4 configuration_ provides:
 - minified HTML in production
 - CSS autoprefixer in production
     - __Note:__ CSS3 Grid Layout polyfill (IE 10-11) is available
+- netlify deployment helpers for production:
+    - `./netlify/_redirects` file:
+        - [more about the _redirects file](https://www.netlify.com/docs/redirects/)
+    - netlify NPM build script `"build:netlify"` to copy/past the `_redirects` file at build time to the `./dist` directory
 
 <br>
 
-- export favicon both in development and production
+- export `favicon.png` both in development and production
 - export SEO files both in development and production:
-    - robots.txt
-    - humans.txt
+    - `robots.txt`
+    - `humans.txt`
         - [more about the humans.txt file](http://humanstxt.org/)
 
 ## Usage:
