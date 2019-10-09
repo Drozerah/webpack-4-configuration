@@ -47,6 +47,7 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpe?g|gif)$/,
+        exclude: /favicon\.png$/, // Exclude this file
         use: [
           {
             loader: 'file-loader', // Emits the file into the output directory
